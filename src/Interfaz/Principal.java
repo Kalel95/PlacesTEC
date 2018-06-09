@@ -5,8 +5,7 @@
  */
 package Interfaz;
 
-import Paquete.Estructuras.
-
+import Paquete.Estructuras.Constructor;
 import Paquete.Logica.PruebaBD4O;
 import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
