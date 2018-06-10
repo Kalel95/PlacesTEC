@@ -18,12 +18,12 @@ public class PruebaBD4O {
 		this.BDusuario=Db4o.openFile("Usuarios.yap");
 	}
 	
-	public ObjectSet Consultar() {
+	public ObjectSet ConsultarLugares() {
 		ObjectSet result=BDusuario.queryByExample(null);
 		return result;
 	}
 	
-	public ObjectSet Consultar(Object obj) {
+	public ObjectSet ConsultarLugar(Object obj) {
 		ObjectSet result=BDusuario.queryByExample(obj);
 		return result;
 	}
@@ -34,20 +34,21 @@ public class PruebaBD4O {
         
 	
 	public void Borrar(Object obj) {
-		ObjectSet result=Consultar(obj);
+		ObjectSet result=ConsultarLugar(obj);
 		while(result.hasNext()) {
 			BDusuario.delete(result.next());
 		}
                
 	}
         
+        
 	
-	public void Modificar(Object obj,String Usuario,int Latitud, int Longitud, String Lugar, String medio, String dia, String mes, String año) {
+	public void Modificar(Object obj,int Codigo,int Latitud, int Longitud, String Lugar, String medio, String dia, String mes, String año) {
 		
-		ObjectSet result=Consultar(obj);
+		ObjectSet result=ConsultarLugar(obj);
 		while(result.hasNext()) {
 			Constructor p1=(Constructor) result.next();
-			p1.modificarPersona( Usuario,Latitud,  Longitud,  Lugar,  medio,  dia,  mes,  año);
+			p1.modificarLugar( Codigo,Latitud,  Longitud,  Lugar,  medio,  dia,  mes,  año);
 			BDusuario.store(p1);
 		}
 	}

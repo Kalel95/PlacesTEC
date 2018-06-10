@@ -53,29 +53,12 @@ public class Principal extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jTextField8 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jLabel17 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(1250, 720));
-        setPreferredSize(new java.awt.Dimension(623, 623));
+        setMinimumSize(new java.awt.Dimension(1350, 700));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Latitud");
@@ -138,61 +121,11 @@ public class Principal extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 341, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, -1, -1));
 
-        jLabel8.setText("Usuario");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 149, -1, -1));
-        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 146, 56, -1));
-
-        jLabel9.setText("Latitud");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 149, -1, -1));
-
-        jLabel10.setText("Longitud");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 187, -1, -1));
-
-        jLabel11.setText("Lugar");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 225, -1, -1));
-
-        jLabel12.setText("Medio");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 268, -1, -1));
-
-        jLabel13.setText("Dia");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 306, -1, -1));
-
-        jLabel14.setText("Mes");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 306, -1, -1));
-
-        jLabel15.setText("Usuario");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 149, -1, -1));
-        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(493, 146, 56, -1));
-
-        jLabel16.setText("Año");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 306, 24, -1));
-
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 146, 50, -1));
-        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 184, 50, -1));
-        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 222, 50, -1));
-        getContentPane().add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 265, 50, -1));
-
-        jTextField14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField14ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(331, 303, 18, -1));
-
-        jTextField15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField15ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 303, 21, -1));
-        getContentPane().add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 303, 19, -1));
+        jLabel8.setText("Código");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
+        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 56, -1));
 
         jButton3.setText("Editar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -200,7 +133,7 @@ public class Principal extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 341, -1, -1));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, -1, -1));
 
         jButton4.setText("Eliminar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -208,10 +141,15 @@ public class Principal extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(389, 341, -1, -1));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 300, -1, -1));
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/FONDO.jpg"))); // NOI18N
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1740, 750));
+        jButton5.setText("Consultar");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -259,17 +197,20 @@ public class Principal extends javax.swing.JFrame {
         else{
             int latitud = Integer.parseInt(jTextField1.getText());
             int longitud = Integer.parseInt(jTextField2.getText());
-            Constructor persona=new Constructor(jTextField8.getText(),latitud,longitud,jTextField3.getText(),jTextField4.getText(),
+            int codigo=Integer.parseInt(jTextField8.getText());
+                    
+            Constructor persona=new Constructor(codigo,latitud,longitud,jTextField3.getText(),jTextField4.getText(),
                jTextField5.getText(),jTextField6.getText(),jTextField7.getText());
             Basedatos.Insertar(persona);
+            JOptionPane.showMessageDialog(null,persona );
         
             System.out.println("\n*Aquí se hace un SELECT del usuario");
-             ObjectSet resultado=Basedatos.Consultar(new Constructor(null,0,0,null,null,null,null,null));
+             ObjectSet resultado=Basedatos.ConsultarLugar(new Constructor(0,0,0,null,null,null,null,null));
 		while(resultado.hasNext()) {
 			System.out.println(resultado.next().toString());
-                        JOptionPane.showMessageDialog(null, resultado.next().toString());
-                       
+                         
 		}
+                
                 //JOptionPane.showMessageDialog(null,x+"probando");
                 
         jTextField1.setText("");
@@ -284,29 +225,17 @@ public class Principal extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
-
-    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField14ActionPerformed
-
-    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField15ActionPerformed
-
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         int latitud = Integer.parseInt(jTextField1.getText());
-        int longitud2 = Integer.parseInt(jTextField2.getText());
-        int latitud2 = Integer.parseInt(jTextField10.getText());
-        int longitud = Integer.parseInt(jTextField11.getText());
-        Basedatos.Modificar(new Constructor(jTextField9.getText(),latitud,longitud,jTextField3.getText(),jTextField4.getText(),
-               jTextField5.getText(),jTextField6.getText(),jTextField7.getText()), jTextField9.getText(),latitud,longitud,jTextField12.getText(),jTextField13.getText(),
-               jTextField14.getText(),jTextField15.getText(),jTextField16.getText());
+        int longitud = Integer.parseInt(jTextField2.getText());       
+        int codigo=Integer.parseInt(jTextField8.getText());
+    
+        Basedatos.Modificar(new Constructor(codigo,0,0,null,null,
+               null,null,null), codigo,latitud,longitud,jTextField3.getText(),jTextField4.getText(),
+               jTextField5.getText(),jTextField6.getText(),jTextField7.getText());
                 
 		System.out.println("\n*Aquí se hace un SELECT del usuario*");
-		ObjectSet resultado=Basedatos.Consultar(new Constructor("",0,0,"Puntarenas",null,null,null,null));
+		ObjectSet resultado=Basedatos.ConsultarLugar(new Constructor(0,0,0,"Puntarenas",null,null,null,null));
 		while(resultado.hasNext()) {
 			System.out.println(resultado.next().toString());
                         
@@ -315,17 +244,14 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        int latitud = Integer.parseInt(jTextField10.getText());
-        int longitud = Integer.parseInt(jTextField11.getText());
-        Basedatos.Borrar(new Constructor(jTextField9.getText(),latitud,longitud,jTextField12.getText(),jTextField13.getText(),
-               jTextField14.getText(),jTextField15.getText(),jTextField16.getText()));
-		
-		System.out.println("\n*Aquí consulta todos los objetos de la base de datos.*");
-		ObjectSet resultado=Basedatos.Consultar();
-		while(resultado.hasNext()) {
-			System.out.println(resultado.next().toString());
-		}
+        int codigo = Integer.parseInt(jTextField8.getText());
+        Basedatos.Borrar(new Constructor(codigo,0,0,null,null,null,null,null));		
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        //System.out.println(Basedatos.ConsultarLugares());
+        JOptionPane.showMessageDialog(null,Basedatos.ConsultarLugares() );
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -367,15 +293,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -383,15 +302,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
@@ -399,6 +310,5 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }

@@ -10,7 +10,7 @@ package Paquete.Estructuras;
  * @author Joel
  */
 public class Constructor {
-    private String Usuario;
+    private int Codigo;
     private int Latitud;
     private int Longitud;
     private String Lugar;
@@ -19,8 +19,8 @@ public class Constructor {
     private String mes;
     private String año;
 
-    public Constructor(String Usuario,int Latitud, int Longitud, String Lugar, String medio, String dia, String mes, String año) {
-        this.Usuario = Usuario;
+    public Constructor(int Codigo,int Latitud, int Longitud, String Lugar, String medio, String dia, String mes, String año) {
+        this.Codigo = Codigo;
         this.Latitud = Latitud;
         this.Longitud = Longitud;
         this.Lugar = Lugar;
@@ -89,25 +89,25 @@ public class Constructor {
     public void setAño(String año) {
         this.año = año;
     }
-    public String getUsuario() {
-        return Usuario;
+    public int getCodigo() {
+        return Codigo;
     }
 
-    public void setUsuario(String Usuario) {
-        this.Usuario = Usuario;
+    public void setCodigo(int Usuario) {
+        this.Codigo = Codigo;
     }
 
 
     
     public String toString() {
-	String Dato= "\n| Usuario: "+this.Usuario+"\n| Latitud: "+this.Latitud+"\t| Longitud: "+this.Longitud+
+	String Dato= "\n| Código: "+this.Codigo+"\n| Latitud: "+this.Latitud+"\t| Longitud: "+this.Longitud+
 				"\n| Lugar: "+this.Lugar+"\t| Medio: "+this.medio+"\t| dia: "+this.dia+"\t| mes: "+
                 this.mes+"\t| año: "+this.año+"\n------------------------------------------------------------";
 				
 	return Dato;
 	}
-    public void modificarPersona(String Usuario,int Latitud, int Longitud, String Lugar, String medio, String dia, String mes, String año) {
-	this.Usuario = Usuario;
+    public void modificarLugar(int Codigo,int Latitud, int Longitud, String Lugar, String medio, String dia, String mes, String año) {
+	this.Codigo = Codigo;
         this.Latitud = Latitud;
         this.Longitud = Longitud;
         this.Lugar = Lugar;
