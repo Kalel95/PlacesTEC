@@ -5,8 +5,8 @@
  */
 package Interfaz;
 
-import Paquete.Estructuras.Constructor;
-import Paquete.Logica.PruebaBD4O;
+import Paquete.Estructuras.Lugar;
+import Paquete.Logica.BD4O;
 import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
 import javax.swing.JOptionPane;
@@ -16,9 +16,9 @@ import javax.swing.JOptionPane;
  * @author Joel
  */
 public class Principal extends javax.swing.JFrame {
-
-    PruebaBD4O Basedatos=new PruebaBD4O();
-    static Constructor usuarios;
+    
+    BD4O Basedatos=new BD4O();
+    static Lugar usuarios;
     //ObjectSet resultado;
     static String x="";
     
@@ -167,6 +167,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //validar que los jtextfield no esten vacíos
         if((jTextField1.getText() == null || jTextField1.getText().equals(""))||
                 (jTextField2.getText() == null || jTextField2.getText().equals(""))||
                 (jTextField3.getText() == null || jTextField3.getText().equals(""))||
@@ -183,6 +184,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        //validar que los jtextfield no esten vacíos
         if((jTextField1.getText() == null || jTextField1.getText().equals(""))||
                 (jTextField2.getText() == null || jTextField2.getText().equals(""))||
                 (jTextField3.getText() == null || jTextField3.getText().equals(""))||
@@ -195,17 +197,18 @@ public class Principal extends javax.swing.JFrame {
             return;
         }
         else{
+            
             int latitud = Integer.parseInt(jTextField1.getText());
             int longitud = Integer.parseInt(jTextField2.getText());
             int codigo=Integer.parseInt(jTextField8.getText());
-                    
-            Constructor persona=new Constructor(codigo,latitud,longitud,jTextField3.getText(),jTextField4.getText(),
+            //se crea un objeto tipo Constructor       
+            Lugar persona=new Lugar(codigo,latitud,longitud,jTextField3.getText(),jTextField4.getText(),
                jTextField5.getText(),jTextField6.getText(),jTextField7.getText());
             Basedatos.Insertar(persona);
             JOptionPane.showMessageDialog(null,persona );
         
             System.out.println("\n*Aquí se hace un SELECT del usuario");
-             ObjectSet resultado=Basedatos.ConsultarLugar(new Constructor(0,0,0,null,null,null,null,null));
+             ObjectSet resultado=Basedatos.ConsultarLugar(new Lugar(0,0,0,null,null,null,null,null));
 		while(resultado.hasNext()) {
 			System.out.println(resultado.next().toString());
                          
@@ -230,12 +233,12 @@ public class Principal extends javax.swing.JFrame {
         int longitud = Integer.parseInt(jTextField2.getText());       
         int codigo=Integer.parseInt(jTextField8.getText());
     
-        Basedatos.Modificar(new Constructor(codigo,0,0,null,null,
+        Basedatos.Modificar(new Lugar(codigo,0,0,null,null,
                null,null,null), codigo,latitud,longitud,jTextField3.getText(),jTextField4.getText(),
                jTextField5.getText(),jTextField6.getText(),jTextField7.getText());
                 
 		System.out.println("\n*Aquí se hace un SELECT del usuario*");
-		ObjectSet resultado=Basedatos.ConsultarLugar(new Constructor(0,0,0,"Puntarenas",null,null,null,null));
+		ObjectSet resultado=Basedatos.ConsultarLugar(new Lugar(0,0,0,"Puntarenas",null,null,null,null));
 		while(resultado.hasNext()) {
 			System.out.println(resultado.next().toString());
                         
@@ -245,7 +248,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         int codigo = Integer.parseInt(jTextField8.getText());
-        Basedatos.Borrar(new Constructor(codigo,0,0,null,null,null,null,null));		
+        Basedatos.Borrar(new Lugar(codigo,0,0,null,null,null,null,null));		
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed

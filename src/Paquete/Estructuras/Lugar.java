@@ -9,7 +9,7 @@ package Paquete.Estructuras;
  *
  * @author Joel
  */
-public class Constructor {
+public class Lugar {
     private int Codigo;
     private int Latitud;
     private int Longitud;
@@ -19,7 +19,7 @@ public class Constructor {
     private String mes;
     private String año;
 
-    public Constructor(int Codigo,int Latitud, int Longitud, String Lugar, String medio, String dia, String mes, String año) {
+    public Lugar(int Codigo,int Latitud, int Longitud, String Lugar, String medio, String dia, String mes, String año) {
         this.Codigo = Codigo;
         this.Latitud = Latitud;
         this.Longitud = Longitud;
@@ -30,7 +30,7 @@ public class Constructor {
         this.año = año;
     }  
 
-    public Constructor(String text, String text0, String text1, String text2) {
+    public Lugar(String text, String text0, String text1, String text2) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
